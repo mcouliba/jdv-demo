@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>GenericDemo</name>
+	<comment>No Product Application, version 9.0.5.Final-v20160122-1548-B1232</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.teiid.designer.vdb.ui.vdbBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.teiid.designer.extension.ui.modelExtensionDefinitionBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.teiid.designer.core.modelBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.teiid.designer.core.modelNature</nature>
+	</natures>
+</projectDescription>

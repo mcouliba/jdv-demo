@@ -1,1 +1,1 @@
-# jdv-demo
+# Red Hat JBoss Data Virtualization
