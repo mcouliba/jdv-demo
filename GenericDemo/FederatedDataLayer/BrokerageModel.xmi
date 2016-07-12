@@ -4,10 +4,10 @@
     <modelImports xmi:uuid="mmuuid:8ece3a9b-a2d0-442a-9b1b-6aa539c12ac1" name="AllCustomersAccounts" modelLocation="AllCustomersAccounts.xmi" uuid="mmuuid:38e93484-aaa8-4962-9cac-3f1055285297" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
     <modelImports xmi:uuid="mmuuid:6db2584f-fbaa-48ad-a501-7db144a84282" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
     <modelImports xmi:uuid="mmuuid:a608a97b-692d-4743-a74a-123b7bf47dc5" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
-    <modelImports xmi:uuid="mmuuid:dcc1a6a0-7c25-4b61-ae2c-104f2b803dcc" name="DS_MDB_MATERIALIZED_VIEWS" modelLocation="../DataSources/DS_MDB_MATERIALIZED_VIEWS.xmi" uuid="mmuuid:0290285f-2c00-4b9f-864e-85933231aa2b" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+    <modelImports xmi:uuid="mmuuid:dcc1a6a0-7c25-4b61-ae2c-104f2b803dcc" name="MV_MDB_MATERIALIZED_VIEWS" modelLocation="../DataSources/MV_MDB_MATERIALIZED_VIEWS.xmi" uuid="mmuuid:0290285f-2c00-4b9f-864e-85933231aa2b" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
     <modelImports xmi:uuid="mmuuid:c262bb6f-0e97-449b-b302-5e0dc6adbc8c" name="VBL_PRODUCTS" modelLocation="../VirtualBaseLayer/VBL_PRODUCTS.xmi" uuid="mmuuid:7d3feffb-7c3b-4734-b605-854f9ebf8d54" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
     <modelImports xmi:uuid="mmuuid:084ba0c1-7323-4cea-8602-7e00ee172f70" name="VBL_DATA_DIR" modelLocation="../VirtualBaseLayer/VBL_DATA_DIR.xmi" uuid="mmuuid:01178d11-5077-48ea-a041-b92599e1427c" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
-    <modelImports xmi:uuid="mmuuid:a2922a13-545f-4ebe-a78e-449e817839d9" name="DS_PG_MATERIALIZEDDB" modelLocation="../DataSources/DS_PG_MATERIALIZEDDB.xmi" uuid="mmuuid:fe3c1068-02b5-47f3-b260-a440ad0c3ad0" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+    <modelImports xmi:uuid="mmuuid:a2922a13-545f-4ebe-a78e-449e817839d9" name="MV_PG_MATERIALIZEDDB" modelLocation="../DataSources/MV_PG_MATERIALIZEDDB.xmi" uuid="mmuuid:fe3c1068-02b5-47f3-b260-a440ad0c3ad0" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
   </mmcore:ModelAnnotation>
   <diagram:DiagramContainer xmi:uuid="mmuuid:b68d1c2e-dd5b-4d5e-a541-da74e3fa0ba5">
     <diagram xmi:uuid="mmuuid:75c95522-f161-4310-abdb-12cc697f5dec" type="packageDiagramType" target="mmuuid/2ef2fbe9-92e7-4f4d-9af6-d6bd44f3618c">
@@ -505,7 +505,7 @@
     <columns xmi:uuid="mmuuid:7268d5f4-902c-46a8-9219-0d29c0c13cf3" name="totalValue">
       <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#bigdecimal"/>
     </columns>
-    <materializedTable xsi:type="relational:BaseTable" href="../DataSources/DS_PG_MATERIALIZEDDB.xmi#mmuuid/548dfb34-12a8-4d66-ab05-2573e39c780f"/>
+    <materializedTable xsi:type="relational:BaseTable" href="../DataSources/MV_PG_MATERIALIZEDDB.xmi#mmuuid/548dfb34-12a8-4d66-ab05-2573e39c780f"/>
     <primaryKey xmi:uuid="mmuuid:42a8d1f0-d667-466e-9df9-00187670b987" name="PK_FA" columns="mmuuid/3c9f8cf9-3685-4731-8c81-e4ca569dc0fb mmuuid/7e5aee4b-6d4c-4a65-bfa2-2d6c9c888ad9"/>
   </relational:BaseTable>
   <transformation:TransformationContainer xmi:uuid="mmuuid:87670caf-fb38-44d2-94ef-cbb0aa057354">
@@ -594,6 +594,6 @@
     <columns xmi:uuid="mmuuid:b126dc5f-122f-4e73-8453-e9aef691e0bd" name="totalValue" precision="15">
       <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#bigdecimal"/>
     </columns>
-    <materializedTable xsi:type="relational:BaseTable" href="../DataSources/DS_MDB_MATERIALIZED_VIEWS.xmi#mmuuid/4ca89316-84c1-4f85-8f44-4f788cbacbc9"/>
+    <materializedTable xsi:type="relational:BaseTable" href="../DataSources/MV_MDB_MATERIALIZED_VIEWS.xmi#mmuuid/4ca89316-84c1-4f85-8f44-4f788cbacbc9"/>
   </relational:BaseTable>
 </xmi:XMI>
