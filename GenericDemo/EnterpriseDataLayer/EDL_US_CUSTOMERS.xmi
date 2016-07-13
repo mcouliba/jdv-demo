@@ -85,7 +85,7 @@
   <transformation:TransformationContainer xmi:uuid="mmuuid:55f79a19-62f8-4b1a-a775-f2bc8cecd960">
     <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:5d0e92c6-a2ab-49d6-94a6-7315a11616dd" outputs="mmuuid/396ce881-898f-4e7a-b96e-235ca14f704e" target="mmuuid/396ce881-898f-4e7a-b96e-235ca14f704e">
       <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:fc30dc75-95c3-4d91-9e07-8ff9d43ee8d4">
-        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:08ddd3f5-ccc8-43ca-bf3d-a7dcc2615f9a" selectSql="SELECT&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.account.accountid, VBL_US_CUSTOMERS.account.ssn AS customerid, VBL_US_CUSTOMERS.account.accounttype, VBL_US_CUSTOMERS.account.accountstatus, VBL_US_CUSTOMERS.account.dateopened, VBL_US_CUSTOMERS.account.dateclosed&#xa;&#x9;FROM&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.account"/>
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:08ddd3f5-ccc8-43ca-bf3d-a7dcc2615f9a" selectSql="/**/ &#xa;SELECT&#xa;&#x9;&#x9;accountid, ssn AS customerid, accounttype, accountstatus, dateopened, dateclosed&#xa;&#x9;FROM&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.account"/>
         <aliases xmi:uuid="mmuuid:6d7805ed-dc0e-4b44-8acd-cfb1ff25215a" alias="account">
           <aliasedObject href="../VirtualBaseLayer/VBL_US_CUSTOMERS.xmi#mmuuid/4be4da0b-9b28-435e-9d21-4b796572e5a1"/>
         </aliases>
@@ -136,7 +136,7 @@
     </transformationMappings>
     <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:8bf54309-9add-4a30-8bca-c4bf5830f756" outputs="mmuuid/ed6fd7b9-3eeb-4c8f-b119-f3057f7ff2ef" target="mmuuid/ed6fd7b9-3eeb-4c8f-b119-f3057f7ff2ef">
       <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:378d2011-80af-4fd8-9a4e-b6df3dca84e4">
-        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:e4424f40-c136-4fba-9754-f1ca786d7a6c" selectSql="SELECT&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.customer.ssn AS customerid, VBL_US_CUSTOMERS.customer.firstname, VBL_US_CUSTOMERS.customer.lastname, VBL_US_CUSTOMERS.customer.middleinitial AS middlename, VBL_US_CUSTOMERS.customer.streetaddress1 AS streetaddress, VBL_US_CUSTOMERS.customer.aptnumber AS streetaddress2, VBL_US_CUSTOMERS.customer.city, VBL_US_CUSTOMERS.customer.state AS stateprovince, VBL_US_CUSTOMERS.customer.zipcode AS postalcode, 'America' AS country, VBL_US_CUSTOMERS.customer.phone AS phonenumber&#xa;&#x9;FROM&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.customer"/>
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:e4424f40-c136-4fba-9754-f1ca786d7a6c" selectSql="SELECT&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.customer.ssn AS customerid, VBL_US_CUSTOMERS.customer.firstname, VBL_US_CUSTOMERS.customer.lastname, VBL_US_CUSTOMERS.customer.middleinitial AS middlename, VBL_US_CUSTOMERS.customer.streetaddress1 AS streetaddress, VBL_US_CUSTOMERS.customer.aptnumber AS streetaddress2, VBL_US_CUSTOMERS.customer.city, VBL_US_CUSTOMERS.customer.state AS stateprovince, VBL_US_CUSTOMERS.customer.zipcode AS postalcode, 'USA' AS country, VBL_US_CUSTOMERS.customer.phone AS phonenumber&#xa;&#x9;FROM&#xa;&#x9;&#x9;VBL_US_CUSTOMERS.customer"/>
         <aliases xmi:uuid="mmuuid:c7c0f6ae-b2f6-4baa-a3fe-9b64abbe051b" alias="customer">
           <aliasedObject href="../VirtualBaseLayer/VBL_US_CUSTOMERS.xmi#mmuuid/98f706ac-f690-49f9-b13c-1c5d07de0fdd"/>
         </aliases>
